@@ -62,7 +62,7 @@ namespace Oxide.Plugins
         }
         void SaveData()
         {
-            Interface.Oxide.DataFileSystem.WriteObject("TourneyBlock", storedData);
+            Interface.Oxide.DataFileSystem.WriteObject("TheDataWONotes", storedData);
         }
         [ChatCommand("MyDoor")]
         void mydoor(BasePlayer player)
