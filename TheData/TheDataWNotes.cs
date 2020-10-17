@@ -129,7 +129,7 @@ namespace Oxide.Plugins
             storedData.Knocked.Clear();
             //And then we need to save the change to file so we call the save function
             SaveData();
-            //Then we will infor the player that the data has been cleared
+            //Then we will inform the player that the data has been cleared
             SendReply(player, "Data Cleared");
         }
 
