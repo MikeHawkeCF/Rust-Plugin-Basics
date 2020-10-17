@@ -64,6 +64,7 @@ namespace Oxide.Plugins
         class StoredData
         {
             //In the data file we want a list titled knocked
+            //We will be storing player UserID (steamID) so we need the list to be a ulong
             public List<ulong> Knocked = new List<ulong>();
         }
         //When the server is loaded we want it to read and write the data file
