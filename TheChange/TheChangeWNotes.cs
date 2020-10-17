@@ -1,8 +1,8 @@
 ﻿//Lets use a command to change a value in the config
 //Lets also create a permission and check if the player has the permssions before letting
-//them change any config values whiles within the game
+//then change any config values while within the game
 
-//Lets set up or dependancies and config as we did in TheConfig 
+//Lets set up our dependancies and config as we did in TheConfig 
 using Newtonsoft.Json;
 
 namespace Oxide.Plugins
@@ -15,9 +15,10 @@ namespace Oxide.Plugins
         private ConfigData configData;
         class ConfigData
         {
-            //This time we will make rep a bool so will have a value of true or false
+            //This time we will make rep a bool so it will have a value of true or false
             [JsonProperty(PropertyName = "Bool")]
             public bool rep = true;
+            //So public bool instead of public string and the value is no longer within quotations
         }
 
         //do our checks
@@ -50,7 +51,7 @@ namespace Oxide.Plugins
             }
         }
 
-        //Create config
+        //Create config if one doesn't exist
         protected override void LoadDefaultConfig()
         {
             Puts("Creating new config file.");
