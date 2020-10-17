@@ -71,15 +71,15 @@ namespace Oxide.Plugins
         void Loaded()
         {
             //Read the data
-            storedData = Interface.Oxide.DataFileSystem.ReadObject<StoredData>("TheDataWONotes");
+            storedData = Interface.Oxide.DataFileSystem.ReadObject<StoredData>("TheDataWNotes");
             //Write the data
-            Interface.Oxide.DataFileSystem.WriteObject("TheDataWONotes", storedData);
+            Interface.Oxide.DataFileSystem.WriteObject("TheDataWNotes", storedData);
         }
         //Data save function
         void SaveData()
         {
             //Same as above (in Loaded()) write the data
-            Interface.Oxide.DataFileSystem.WriteObject("TheDataWONotes", storedData);
+            Interface.Oxide.DataFileSystem.WriteObject("TheDataWNotes", storedData);
         }
 
         [ChatCommand("MyDoor")]
