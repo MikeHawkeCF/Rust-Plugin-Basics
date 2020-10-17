@@ -79,7 +79,7 @@ namespace Oxide.Plugins
         void SaveData()
         {
             //Same as above (in Loaded()) write the data
-            Interface.Oxide.DataFileSystem.WriteObject("TourneyBlock", storedData);
+            Interface.Oxide.DataFileSystem.WriteObject("TheDataWONotes", storedData);
         }
 
         [ChatCommand("MyDoor")]
