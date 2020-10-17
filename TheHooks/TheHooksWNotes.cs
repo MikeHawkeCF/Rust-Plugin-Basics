@@ -106,7 +106,7 @@ namespace Oxide.Plugins
             }
             else
             {
-                //if the door is not the one in the config close the door.
+                //if the door is not the one in the config return.
                 return;
             }
         }
