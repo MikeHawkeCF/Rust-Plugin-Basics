@@ -86,7 +86,7 @@ namespace Oxide.Plugins
             //E.g. if we did "SaveConfig(cheese);" config would equal "cheese"
 
             //We are refenceing that here
-            //Config.WritObject (write and object in the config folder
+            //Config.WriteObject (write and object in the config folder
             //(config, true) config = configData... or cheese and true as in go ahead
             Config.WriteObject(config, true);
 
