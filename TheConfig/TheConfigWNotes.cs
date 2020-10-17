@@ -12,7 +12,7 @@ namespace Oxide.Plugins
     // Class same as plugin name
     {
         //Okay.. Lets take this slow and easy
-        // Fist lets Delare the config as configData and write whats in it
+        // Fist lets Declare the config as configData and write whats in it
         private ConfigData configData;
         class ConfigData
         {
