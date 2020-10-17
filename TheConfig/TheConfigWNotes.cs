@@ -104,7 +104,7 @@ namespace Oxide.Plugins
 
             SendReply(player, configData.rep);
 
-            //And there we go, the player should get the responce "This is the reply that is set in the config"
+            //And there we go, the player should get the response "This is the reply that is set in the config"
         }
     }
 }
