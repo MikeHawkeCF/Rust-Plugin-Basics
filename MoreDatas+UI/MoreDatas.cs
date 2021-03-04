@@ -84,11 +84,14 @@ namespace Oxide.Plugins
         //Hooks
         void OnPlayerAttack(BasePlayer attacker, HitInfo info)
         {
+            //If entry doesn't exist
             if(!storedData.PlayerStats.ContainsKey(attacker.UserIDString))
             {
+                //Create one
                 Hits value = new Hits();
                 storedData.PlayerStats.Add(attacker.UserIDString, value);
             }
+            //Then add value to data and save
             storedData.PlayerStats[attacker.UserIDString].attacks++;
             SaveData();
         }
